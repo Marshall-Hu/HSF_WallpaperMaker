@@ -13,6 +13,11 @@
 		00C1FF3522B1435E007D87D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF3422B1435E007D87D2 /* Assets.xcassets */; };
 		00C1FF3822B1435E007D87D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF3622B1435E007D87D2 /* LaunchScreen.storyboard */; };
 		00C1FF3B22B1435E007D87D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1FF3A22B1435E007D87D2 /* main.m */; };
+		00C1FF4222B14395007D87D2 /* line.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF4122B14395007D87D2 /* line.PNG */; };
+		00C1FF4422B1482B007D87D2 /* aim.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF4322B1482B007D87D2 /* aim.JPG */; };
+		00C1FF4622B14D54007D87D2 /* StarSky_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF4522B14D54007D87D2 /* StarSky_LOGO.png */; };
+		00C1FF4B22B231F3007D87D2 /* aim_hori.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF4A22B231F2007D87D2 /* aim_hori.JPG */; };
+		00C1FF4F22B234B9007D87D2 /* aim_cut.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF4E22B234B9007D87D2 /* aim_cut.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		00C1FF3722B1435E007D87D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C1FF3922B1435E007D87D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C1FF3A22B1435E007D87D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00C1FF4122B14395007D87D2 /* line.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.PNG; sourceTree = "<group>"; };
+		00C1FF4322B1482B007D87D2 /* aim.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aim.JPG; sourceTree = "<group>"; };
+		00C1FF4522B14D54007D87D2 /* StarSky_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarSky_LOGO.png; sourceTree = "<group>"; };
+		00C1FF4A22B231F2007D87D2 /* aim_hori.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aim_hori.JPG; sourceTree = "<group>"; };
+		00C1FF4E22B234B9007D87D2 /* aim_cut.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = aim_cut.JPG; path = "../../../../../自己的壁纸制作/aim_cut.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 		00C1FF2A22B1435D007D87D2 /* HSF_WallpaperMaker */ = {
 			isa = PBXGroup;
 			children = (
+				00C1FF4122B14395007D87D2 /* line.PNG */,
+				00C1FF4322B1482B007D87D2 /* aim.JPG */,
+				00C1FF4A22B231F2007D87D2 /* aim_hori.JPG */,
+				00C1FF4E22B234B9007D87D2 /* aim_cut.JPG */,
+				00C1FF4522B14D54007D87D2 /* StarSky_LOGO.png */,
 				00C1FF2B22B1435D007D87D2 /* AppDelegate.h */,
 				00C1FF2C22B1435D007D87D2 /* AppDelegate.m */,
 				00C1FF2E22B1435D007D87D2 /* ViewController.h */,
@@ -128,9 +143,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C1FF4B22B231F3007D87D2 /* aim_hori.JPG in Resources */,
 				00C1FF3822B1435E007D87D2 /* LaunchScreen.storyboard in Resources */,
 				00C1FF3522B1435E007D87D2 /* Assets.xcassets in Resources */,
+				00C1FF4422B1482B007D87D2 /* aim.JPG in Resources */,
+				00C1FF4F22B234B9007D87D2 /* aim_cut.JPG in Resources */,
 				00C1FF3322B1435D007D87D2 /* Main.storyboard in Resources */,
+				00C1FF4622B14D54007D87D2 /* StarSky_LOGO.png in Resources */,
+				00C1FF4222B14395007D87D2 /* line.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3N5Q34FV45;
+				DEVELOPMENT_TEAM = 3295JJ3P97;
 				INFOPLIST_FILE = HSF_WallpaperMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3N5Q34FV45;
+				DEVELOPMENT_TEAM = 3295JJ3P97;
 				INFOPLIST_FILE = HSF_WallpaperMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

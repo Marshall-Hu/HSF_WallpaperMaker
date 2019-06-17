@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kzC-ft-zrP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jLe-uX-3Ap">
+            <objects>
+                <navigationController id="kzC-ft-zrP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Lo-v3-0ej">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sSQ-eB-GvX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gz6-e9-QaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="84"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YL6-Jg-ZCv">
+                                <rect key="frame" x="107" y="232" width="200" height="433"/>
+                                <color key="backgroundColor" red="0.1500953196" green="0.7383605647" blue="0.31039462569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="B4P-pf-w5t"/>
+                                    <constraint firstAttribute="height" constant="433" id="kBF-jT-6zt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="z07-1f-nAv"/>
+                                </connections>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="AHJ-BY-WuS">
+                                <rect key="frame" x="132" y="285" width="150" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ozG-hu-71T"/>
+                                    <constraint firstAttribute="height" constant="325" id="st9-vh-elk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YL6-Jg-ZCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7zJ-cV-JhI"/>
+                            <constraint firstItem="AHJ-BY-WuS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I5k-f0-UaQ"/>
+                            <constraint firstItem="YL6-Jg-ZCv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cMy-Lq-O8U"/>
+                            <constraint firstItem="AHJ-BY-WuS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p0h-w7-M5i"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LfL-h7-bMz">
+                        <barButtonItem key="leftBarButtonItem" title="Select" id="kV0-zT-esG">
+                            <connections>
+                                <action selector="SelectImage:" destination="BYZ-38-t0r" id="GWL-0O-p6R"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BIC-Ew-USc">
+                            <connections>
+                                <action selector="SaveAndDraw:" destination="BYZ-38-t0r" id="lFC-Vw-zBX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myImage" destination="AHJ-BY-WuS" id="9Ee-yg-7hx"/>
+                        <outlet property="scrollView" destination="YL6-Jg-ZCv" id="X7N-G5-G9y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="line.PNG" width="1301" height="2820"/>
+    </resources>
 </document>
