@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BB0A6122BF0B690033EC34 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BB0A6022BF0B690033EC34 /* 123.png */; };
 		00C1FF2D22B1435D007D87D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1FF2C22B1435D007D87D2 /* AppDelegate.m */; };
 		00C1FF3022B1435D007D87D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C1FF2F22B1435D007D87D2 /* ViewController.m */; };
 		00C1FF3322B1435D007D87D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C1FF3122B1435D007D87D2 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00BB0A6022BF0B690033EC34 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		00C1FF2822B1435D007D87D2 /* HSF_WallpaperMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSF_WallpaperMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C1FF2B22B1435D007D87D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00C1FF2C22B1435D007D87D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				00C1FF4122B14395007D87D2 /* line.PNG */,
 				00C1FF4322B1482B007D87D2 /* aim.JPG */,
 				00C1FF4A22B231F2007D87D2 /* aim_hori.JPG */,
+				00BB0A6022BF0B690033EC34 /* 123.png */,
 				00C1FF4E22B234B9007D87D2 /* aim_cut.JPG */,
 				00C1FF4522B14D54007D87D2 /* StarSky_LOGO.png */,
 				00C1FF2B22B1435D007D87D2 /* AppDelegate.h */,
@@ -146,6 +149,7 @@
 				00C1FF4B22B231F3007D87D2 /* aim_hori.JPG in Resources */,
 				00C1FF3822B1435E007D87D2 /* LaunchScreen.storyboard in Resources */,
 				00C1FF3522B1435E007D87D2 /* Assets.xcassets in Resources */,
+				00BB0A6122BF0B690033EC34 /* 123.png in Resources */,
 				00C1FF4422B1482B007D87D2 /* aim.JPG in Resources */,
 				00C1FF4F22B234B9007D87D2 /* aim_cut.JPG in Resources */,
 				00C1FF3322B1435D007D87D2 /* Main.storyboard in Resources */,

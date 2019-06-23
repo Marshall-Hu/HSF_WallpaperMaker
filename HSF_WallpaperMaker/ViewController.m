@@ -73,6 +73,7 @@ float imageOffset_Y_All= 0.00001;
         
         UIGraphicsBeginImageContext(image2.size);  //size 为CGSize类型，即你所需要的图片尺寸,在你的蒙版h上面绘制图像
         [newImage drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];//将剪切得到的图像 画在画布上
+        [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];//将蒙版画在画布上
         UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();//得到当前的图像
         CGImageRelease(newImageRef);//释放内存
         UIGraphicsEndImageContext();//关闭第二个
@@ -94,6 +95,8 @@ float imageOffset_Y_All= 0.00001;
         
         UIGraphicsBeginImageContext(image2.size);  //size 为CGSize类型，即你所需要的图片尺寸
         [newImage drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+        [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+
         UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
         CGImageRelease(newImageRef);
         UIGraphicsEndImageContext();
@@ -111,7 +114,7 @@ float imageOffset_Y_All= 0.00001;
 
 - (IBAction)SaveAndDraw:(id)sender {
     //显示并且保存到手机
-     _myImage.image = [self addImage:fakeImage withImage:@"line.PNG"];
+     _myImage.image = [self addImage:fakeImage withImage:@"123.png"];
     UIImageWriteToSavedPhotosAlbum(_myImage.image, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
     
 }
